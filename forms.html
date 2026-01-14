@@ -2,8 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Winger Training Form</title>
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <h1>Winger Training Feedback</h1>
+
+      <nav>
+        <a href="index.html">Home</a> | <a href="about.html">Winger Skills</a> |
+        <a href="forms.html">Training Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Training Reflection Form</h2>
+
+        <form>
+          <!-- Fieldset groups related form inputs -->
+          <fieldset>
+            <legend>Player Information</legend>
+
+            <!-- Text input for player name -->
+            <label for="playername">Player Name:</label>
+            <input type="text" id="playername" name="playername" />
+            <br /><br />
+
+            <!-- Email input -->
+            <label for="playeremail">Email:</label>
+            <input type="email" id="playeremail" name="playeremail" />
+            <br /><br />
+
+            <!-- Number input -->
+            <label for="sessions">Training Sessions per Week:</label>
+            <input type="number" id="sessions" name="sessions" />
+            <br /><br />
+
+            <!-- Range input allows users to rate their winger confidence -->
+            <label for="confidence">Winger Confidence Level:</label>
+            <input
+              type="range"
+              id="confidence"
+              name="confidence"
+              min="1"
+              max="5"
+            />
+            <br /><br />
+          </fieldset>
+
+          <!-- Submit button -->
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 Bethel</p>
+    </footer>
+  </body>
 </html>
